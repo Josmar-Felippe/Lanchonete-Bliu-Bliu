@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Cardápio da Lanchonete BLIU BLIU</title>
+  </head>
+  <body>      
+    <div class="gradient-background">
+      <div class="container">
+        <div class="outer-container">
+          <!-- ÁREA DOS ÍCONES DAS REDES SOCIAIS -->
+          <div class="social-icons">
+            <a
+              href="https://www.facebook.com/batatademarechalhermesrj/"
+              target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/batatademarechal/" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://wa.me/5521980732857"
+              target="_blank"
+              class="whatsapp-link"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </div>
+     
+        <!-- Cardápio da Lanchonete -->
+
+        <div class="menu-container">
+          <h1>Cardápio da Lanchonete Bliu Bliu</h1>
+          <!-- Cachorro Quente -->
+          <div class="menu-item">
+            <div class="item-info">
+              <label for="cachorroQuenteQtde">Cachorro Quente (R$8,00):</label>
+              <input type="number" id="cachorroQuenteQtde"  placeholder="Quantidade" />
+            </div>
+            <img src="./imagens/lan03.jpg" alt="Cachorro Quente" />
+          </div>
+         
+          <!-- Bauru Simples -->
+          <div class="menu-item">
+            <div class="item-info">
+              <label for="bauruSimplesQtde">Bauru Simples (R$10,90):</label>
+              <input
+                type="number"
+                id="bauruSimplesQtde"
+                placeholder="Quantidade"
+              />
+            </div>
+            <img src="./imagens/bauru.jpg"Bauru Simples" />
+          </div>
+         
+          <!-- Bauru com ovo -->
+          <div class="menu-item">
+            <div class="item-info">
+              <label for="bauruComOvoQtde">Bauru c/ Ovo (R$15,00):</label>
+              <input
+                type="number"
+                id="bauruComOvoQtde"
+                placeholder="Quantidade"
+              />
+            </div>
+            <img src="./imagens/bauru_ovo.jpg"Bauru com Ovo" />
+          </div>
+         
+          <!-- Hamburguer -->
+          <div class="menu-item">
+            <div class="item-info">
+              <label for="hamburguerQtde">Hamburguer (R$9,00):</label>
+              <input
+                type="number"
+                id="hamburguerQtde"
+                placeholder="Quantidade"
+              />
+            </div>
+            <img src="./imagens/hamburguer.jpg"Hamburguer" />
+          </div>
+         
+          <!-- Chesburguer -->
+          <div class="menu-item">
+            <div class="item-info">
+              <label for="cheeseburgerQtde">Cheeseburger (R$12,00):</label>
+              <input
+                type="number"
+                id="cheeseburgerQtde"
+                placeholder="Quantidade"
+              />
+            </div>
+            <img src="./imagens/cheesburguer.jpg"Cheeseburger" />
+          </div>
+         
+          <!-- Batata Frita -->
+          <div class="menu-item">
+            <div class="item-info">
+              <label for="batataFritaQtde">Batatas Fritas (R$35,00):</label>
+              <input type="number" id="batataFritaQtde" placeholder="Quantidade" />
+            </div>
+            <img src="./imagens/lan01.jpg" alt="Batatas Fritas" />
+          </div>
+         
+          <!-- X-Picanha -->
+          <div class="menu-item">
+            <div class="item-info">
+              <label for="xpicanhaQtde">X-Picanha (R$18,00):</label>
+              <input type="number" id="xpicanhaQtde" placeholder="Quantidade" />
+            </div>
+            <img src="./imagens/lan02.jpg" alt="X Picanha" />
+          </div>
+         
+          <!-- Refrigerantes -->
+          <div class="menu-item">
+            <div class="item-info">
+              <label for="refrigeranteQtde">   Refrigerante (R$12,00):</label>
+              <input type="number" id="refrigeranteQtde" placeholder="Quantidade" />
+            </div>
+            <img src="./imagens/refrigerantes.jpg" alt="Refrigerante" />
+          </div>
+        
+        <!-- Botão para Calcular o Total -->
+        <button onclick="calcularTotal()">Calcular Preço</button>
+      </div>
+
+      <!-- Div para Exibir os Itens Calculados e o Total -->
+      <div class="order-summary">
+        <h2>Resumo do Pedido</h2>
+        <div id="resumoPedido"></div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      Desenvolvido por
+      <a  href="https://www.linkedin.com/in/josmar-felippe-10561713/" target="_blank">Josmar Felippe</a>
+      , no Curso de Programador FrontEnd do Senai (2025)<br />
+      Todos os direitos reservados
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
