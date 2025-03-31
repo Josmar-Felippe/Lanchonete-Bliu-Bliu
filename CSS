@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  background-color: darkgreen;
+  padding: 10px 0;
+  margin-bottom: 10px; /* Reduzir o espaço entre os ícones e o próximo conteúdo */
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 20px;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  text-align: center;
+  background-color: white;
+}
+
+.right {
+  right: 0;
+  text-align: center;
+  background-color: rgba(250, 236, 38, 0.329);
+}
+
+.centered {
+  position: absolute;
+  top: 05%;
+  left: 10%;
+  transform: translate(-50% -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 120px;
+  border-radius: 50%;
+}
+
+.menu-item img {
+  /* Imagens do menu */
+  width: 60px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.item-info {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  height: 15px;
+}
+
+.item-info input {
+  width: 60px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.order-summary {
+  background-color: bisque;
+  text-align: center;
+  border-radius: 35px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 60px;
+}
+
+.split right {
+  text-align: center;
+}
+
+/* Botão */
+button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px; /* Diminuir espaço entre o botão e os itens */
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.rodape {
+  background-color: yellowgreen; /* Cor de fundo escura */
+  color: #111 /* Texto branco */
+  text-align: center; /* Centraliza o texto */
+  padding: 15px 0; /* Espaçamento interno */
+  font-size: 16px;
+  position: relative; /* Garante que fique no fluxo normal da página */
+  width: 100%; /* Ocupa toda a largura */
+  margin-top: 10px;
+}
